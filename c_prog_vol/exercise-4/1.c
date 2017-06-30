@@ -1,0 +1,50 @@
+//getline() and strindex()
+
+
+#include <stdio.h>
+#define MAXLINE 1000 /* maximum input line length */
+    int mygetline(char line[], int max);
+    int strindex(char source[], char searchfor[]);
+    char pattern[] = "ould";
+    /* pattern to search for */
+    /* find all lines matching pattern */
+    main()
+{
+    char line[MAXLINE]={"would" 
+                        "okkkkk\n"};
+    int found = 0;
+
+    while (mygetline(line, MAXLINE) > 0)
+        if (strindex(line, pattern) >= 0) {
+            printf("%s", line);
+            found++;
+        }
+    printf("%d\n",found);
+}
+/* getline: get line into s, return length */
+int mygetline(char s[], int lim)
+{ 
+    //printf("getline\n");
+    int  i;
+    char c;
+    i = 0;
+    while (--lim > 0 && ((c=s[i]) != EOF && c != '\n'))
+        s[i++] = c;
+    if (c == '\n')
+        s[i++] = c;
+    s[i] = '\0';
+   // printf("i-%d\n",i);
+    return i;
+}
+/* strindex: return index of t in s, -1 if none */
+int strindex(char s[], char t[])
+{//printf("strindex\n");
+    int i, j, k;
+    for (i = 0; s[i] != '\0'; i++) {
+        for (j=i, k=0; t[k]!='\0' && s[j]==t[k]; j++, k++)
+            ;
+        if (k > 0 && t[k] == '\0')
+            return i;
+    }
+    return -1;
+}

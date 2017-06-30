@@ -1,0 +1,24 @@
+C o p y r i g h t ( c )   < 2 0 1 6 > ,   V o l a n s y s   T e c h n o l o g i e s   
+       
+     D e s c r i p t i o n :   
+     @ E x _ 1 _ 2 0 _ d e t a b . c       
+     @ d e t a b   t h a t   r e p l a c e s   t a b s   i n   t h e   i n p u t   w i t h   t h e   p r o p e r   n u m b e r   o f   b l a n k s   t o   s p a c e   t o 
+     t h e   n e x t   t a b   s t o p . 
+     
+         
+     A u t h o r               -   R a h u l   P a t e l   
+           
+   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *   
+                           
+     H i s t o r y   
+                         
+     A u g / 1 0 / 2 0 1 6 ,   R a h u l   P     
+                                                                             
+     A u g / 1 0 / 2 0 1 6 ,   R a h u l   P ,   C r e a t e d 
+     
+   * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * / 
+ 
+ # i n c l u d e < s t d i o . h > 
+ # i n c l u d e < s t r i n g . h > 
+ 
+ # d e f i n e   M A X V A L U E   1 0 0                 /   D e f i n e   m m a x i m u m   s i z e   o f   a r r a y     s e t   t a b   s p a c e     i n p u t   s t r i n g     u s i n g   c o u n t i n g   p u r p o s e     D e t e c t   T a b   a n d   r e p l a c e   T a b   w i t h   s p a c e   
