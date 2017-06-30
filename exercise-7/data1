@@ -1,0 +1,16 @@
+#include<string.h>
+#include<stdio.h>
+
+main()
+{
+int n,n1;
+char s1[]={};
+char s2[]={};
+float f1=23.5;
+
+n=strncmp(s1,s2,3);
+printf(,n);
+
+
+
+}

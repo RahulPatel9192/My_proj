@@ -1,0 +1,7 @@
+==3901== Massif, a heap profiler
+==3901== Copyright (C) 2003-2013, and GNU GPL'd, by Nicholas Nethercote
+==3901== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3901== Command: ./a.out
+==3901== Parent PID: 3032
+==3901== 
+==3901== 
